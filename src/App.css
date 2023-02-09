@@ -3,7 +3,7 @@
   text-align: center;
 }
 .pct {
-  background-image: url('https://s9.travelask.ru/uploads/post/000/005/420/main_image/full-ab9c42045c8c82ac34183bc379e9d3ac.jpg');
+  background-image: url('https://s9.travelask.ru/uploads/post/000/005/420/main_image/full-ab9c42045c8c82ac34183bc379e9d3ac.jpg'); 
   background-repeat: no-repeat;
   background-position-x: center;
   min-height: 510px;  
@@ -56,7 +56,7 @@ li {
   }
 .alfa2{
   position: relative;
-  bottom: 15px;
+  bottom:1px;
   }
 
 button {
@@ -74,11 +74,29 @@ img {
   }
 .Ans {
   background-color:rgb(237, 143, 20);
-  padding:32px;
+  /* padding:32px; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   color: rgb(40, 12, 125);
   font-size: 38px;
+  margin: 25px;
+}
+
+
+
+.Answ-enter {
+  opacity: 0;
+}
+.Answ-enter-active {
+  opacity: 1;
+  transition: opacity 7800ms ease-in;
+}
+.Answ-exit {
+  opacity: 1;
+}
+.Answ-exit-active {
+  opacity: 0;
+  transition: opacity 7800ms ease-in;
 }
 .Noans{
   background-color: aqua;
@@ -86,4 +104,18 @@ img {
 p{
  padding: 5px;
  font-size: 18px; 
+}
+.item-enter {
+  transform: scale(0);
+}
+.item-enter-active {
+  transform: scale(1);
+  transition: transform 1800ms ease-in;
+}
+.item-exit {
+  transform: scale(1);
+}
+.item-exit-active {
+  transform: scale(0);
+  transition: transform 1800ms ease-in;
 }
